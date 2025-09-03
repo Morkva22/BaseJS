@@ -3,56 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Домашка</title>
+    <title>JS dz</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            background: slategray;
+            color: white;
+            min-height: 100vh;
         }
         .container {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            background: #596B7A;
+            padding: 30px;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
         }
         button {
-            background: #007bff;
+            background: #2F4F4F;
             color: white;
             border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 15px 25px;
+            border-radius: 8px;
             cursor: pointer;
-            margin: 10px 5px;
+            margin: 10px 10px;
+            font-size: 16px;
+            transition: all 0.3s;
         }
         button:hover {
-            background: #0056b3;
+            background: #1C3A3A;
+            transform: translateY(-2px);
         }
         .output {
-            background: #f8f9fa;
-            border: 1px solid #dee2e6;
-            padding: 15px;
-            margin-top: 10px;
-            border-radius: 5px;
-            min-height: 30px;
+            background: #2F4F4F;
+            border: 2px solid #1C3A3A;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            min-height: 50px;
             font-family: monospace;
+            color: #B0C4DE;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .button-container {
+            text-align: center;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
 <div class="container">
-    <h1>JavaScript Домашка</h1>
+    <h1>Cond./Loops/Functions</h1>
 
-    <button onclick="zavdanya1()">Задание 1</button>
-    <button onclick="zavdanya2()">Задание 2</button>
-    <button onclick="zavdanya3()">Задание 3</button>
-    <button onclick="zavdanya4()">Очистить</button>
+    <div class="button-container">
+        <button onclick="zavdanya1()">Завдання 1</button>
+        <button onclick="zavdanya2()">Завдання 2</button>
+    </div>
 
     <div class="output" id="output">
-        тут буде вивід кода
+        =-= mini Terminal =-=
     </div>
 </div>
+
+<script src="./index.js"></script>
 </body>
 </html>
