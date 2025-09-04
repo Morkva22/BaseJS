@@ -2,12 +2,6 @@ function print(text) {
     document.getElementById('output').innerHTML += text + '<br>';
 }
 
-
-function clearAndStart(taskName) {
-    document.getElementById('output').innerHTML = ''; // очищаем
-    print('=== ' + taskName + ' ===');
-}
-
 function zavdanya1() {
     clearAndStart('ЗАВДАННЯ 1');
 
